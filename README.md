@@ -13,6 +13,7 @@ A repo hosting the Github Pages files for the Artdeshine India website. Built us
 - Reduce size of individual images in Products.
 - Make all image sizes consistent in Products.
 - Change from domain redirect to proper hosting.
+- Optimize all media content.
 
 ## Acknowledgements
 
