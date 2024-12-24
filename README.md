@@ -15,7 +15,7 @@ A repo hosting the Github Pages files for the Artdeshine India website. Built us
 - Change from domain redirect to proper hosting.
 - Optimize all media content.
 - Fix navbar content.
-- Replace sitewide fonts with custom font.
+- (DONE) Replace sitewide fonts with custom font.
 
 ## Acknowledgements
 
