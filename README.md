@@ -7,7 +7,6 @@ A repo hosting the Github Pages files for the Artdeshine India website. Built us
 - Change the PDF redirects to iframe popups.
 - Fix footer and social media links.
 - Add contact form.
-- Add carousel.
 - Reduce size of individual images in Products.
 - Make all image sizes consistent in Products.
 - Change from domain redirect to proper hosting.
@@ -17,6 +16,7 @@ A repo hosting the Github Pages files for the Artdeshine India website. Built us
 - (DONE) Fix product data sheet files.
 - (DONE) Fix Graphene Seal's pdfs (missing).
 - (DONE) Add a google maps section to the bottom.
+- (DONE) Add carousel.
 
 ## Acknowledgements
 
