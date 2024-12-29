@@ -27,8 +27,6 @@
 
 		.carousel {
     		position: relative;
-    		box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    		margin-top: 26px;
 		}
 
 		.carousel-inner {
@@ -140,6 +138,43 @@
 			z-index: 9999;
 			text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 		}
+
+		.modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
+        }
+        .modal-content {
+            position: relative;
+            margin: auto;
+            top: 5%;
+            width: 80%;
+            background-color: #fff;
+            padding: 5px;
+        }
+        .modal iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .close-btn:hover {
+            color: #666;
+        }
 	</style>
 </head>
 
@@ -206,8 +241,8 @@
                 <div class="pt-3 flex items-center justify-between">
 					<p class="text-xl" style="font-family: DisplayFont;">NGC+</p>
                 </div>
-                <a href="assets/product_info/NGC PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
-				<a href="assets/installer_notes/NANO GRAPHENE COATING (NGC)+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
+                <a href="#" class="pdf-link" data-pdf="assets/product_info/NGC PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
+				<a href="#" class="pdf-link" data-pdf="assets/installer_notes/NANO GRAPHENE COATING (NGC)+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
 			<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
@@ -215,8 +250,8 @@
                 <div class="pt-3 flex items-center justify-between">
 					<p class="text-xl" style="font-family: DisplayFont;">AYICON PRO</p>
                 </div>
-                <a href="assets/product_info/AYICON PRO.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
-				<a href="assets/installer_notes/AYICON PRO.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
+                <a href="#" class="pdf-link" data-pdf="assets/product_info/AYICON PRO.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
+				<a href="#" class="pdf-link" data-pdf="assets/installer_notes/AYICON PRO.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
 			<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
@@ -224,8 +259,8 @@
                 <div class="pt-3 flex items-center justify-between">
 					<p class="text-xl" style="font-family: DisplayFont;">HYBRID+</p>
                 </div>
-                <a href="assets/product_info/HYBRID PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
-				<a href="assets/installer_notes/HYBRID+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
+                <a href="#" class="pdf-link" data-pdf="assets/product_info/HYBRID PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
+				<a href="#" class="pdf-link" data-pdf="assets/installer_notes/HYBRID+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
           	<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
@@ -233,8 +268,8 @@
                 <div class="pt-3 flex items-center justify-between">
 					<p class="text-xl" style="font-family: DisplayFont;">AYICON V4</p>
                 </div>
-                <a href="assets/product_info/AYICON V4.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
-				<a href="assets/installer_notes/AYICON V4.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
+                <a href="#" class="pdf-link" data-pdf="assets/product_info/AYICON V4.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
+				<a href="#" class="pdf-link" data-pdf="assets/installer_notes/AYICON V4.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
 			<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
@@ -242,8 +277,8 @@
                 <div class="pt-3 flex items-center justify-between">
 					<p class="text-xl" style="font-family: DisplayFont;">BX+</p>
                 </div>
-                <a href="assets/product_info/BX PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
-				<a href="assets/installer_notes/BEADING EXPRESS (BX)+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
+                <a href="#" class="pdf-link" data-pdf="assets/product_info/BX PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
+				<a href="#" class="pdf-link" data-pdf="assets/installer_notes/BEADING EXPRESS (BX)+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
 			<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
@@ -251,8 +286,8 @@
                 <div class="pt-3 flex items-center justify-between">
 					<p class="text-xl" style="font-family: DisplayFont;">WINDOW+</p>
                 </div>
-                <a href="assets/product_info/WINDOW PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
-				<a href="assets/installer_notes/WINDOW+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
+                <a href="#" class="pdf-link" data-pdf="assets/product_info/WINDOW PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
+				<a href="#" class="pdf-link" data-pdf="assets/installer_notes/WINDOW+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
 			<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
@@ -260,8 +295,8 @@
                 <div class="pt-3 flex items-center justify-between">
 					<p class="text-xl" style="font-family: DisplayFont;">WHEEL+</p>
                 </div>
-                <a href="assets/product_info/WHEEL PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
-				<a href="assets/installer_notes/WHEEL+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
+                <a href="#" class="pdf-link" data-pdf="assets/product_info/WHEEL PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
+				<a href="#" class="pdf-link" data-pdf="assets/installer_notes/WHEEL+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
 			<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
@@ -269,12 +304,52 @@
                 <div class="pt-3 flex items-center justify-between">
 					<p class="text-xl" style="font-family: DisplayFont;">INTERIOR V3</p>
                 </div>
-                <a href="assets/product_info/INTERIOR V3.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
-				<a href="assets/installer_notes/INTERIOR COATING V3.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
+                <a href="#" class="pdf-link" data-pdf="assets/product_info/INTERIOR V3.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
+				<a href="#" class="pdf-link" data-pdf="assets/installer_notes/INTERIOR COATING V3.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
 		</div>
     </section>
+
+    <!-- Modal -->
+    <div id="pdfModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModalBtn">&times;</button>
+            <iframe id="pdfViewer" src=""></iframe>
+        </div>
+    </div>
+
+	<!-- Modal script-->
+	<script>
+        // Get modal elements
+        const modal = document.getElementById("pdfModal");
+        const closeModalBtn = document.getElementById("closeModalBtn");
+        const pdfViewer = document.getElementById("pdfViewer");
+
+        // Add event listener to all links with the "pdf-link" class
+        document.querySelectorAll(".pdf-link").forEach(link => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent default link behavior
+                const pdfUrl = link.getAttribute("data-pdf"); // Get PDF URL from data attribute
+                pdfViewer.src = pdfUrl; // Set iframe source
+                modal.style.display = "block"; // Show modal
+            });
+        });
+
+        // Close modal
+        closeModalBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+            pdfViewer.src = ""; // Clear iframe source to stop PDF loading
+        });
+
+        // Close modal when clicking outside the content
+        modal.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+                pdfViewer.src = ""; // Clear iframe source to stop PDF loading
+            }
+        });
+    </script>
 
     <!-- about us section
     ask about what to add here -->
@@ -291,8 +366,7 @@
     <!-- map section -->
 	<div class="relative w-full h-96">
 		<iframe class="absolute top-0 left-0 w-full h-full"
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.961540516142!2d80.18524927590947!3d12.974311714817087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525de2835da521%3A0x6260820b42c12010!2sDriveClean!5e0!3m2!1sen!2sin!4v1734755493929!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-			frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.961540516142!2d80.18524927590947!3d12.974311714817087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525de2835da521%3A0x6260820b42c12010!2sDriveClean!5e0!3m2!1sen!2sin!4v1734755493929!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</iframe>
 	</div>
 
