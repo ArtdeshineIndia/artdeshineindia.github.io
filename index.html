@@ -15,9 +15,14 @@
 
 	<!-- font and css stuff -->
 	<style>
-		@font-face { font-family: CustomFont; src: url('assets/ADSDisplay-Display.otf'); } 
+		@font-face { font-family: BodyFont; src: url('assets/fonts/PublicSans-Regular.ttf'); } 
+		@font-face { font-family: DisplayFont; src: url('assets/fonts/ADSDisplay-Display.otf'); } 
 		body {
-		   font-family: CustomFont
+		   font-family: DisplayFont;
+		}
+
+		p {
+			font-family: BodyFont;
 		}
 
 		.carousel {
@@ -195,83 +200,74 @@
 	<!-- products section -->
     <section class="bg-white py-8">
         <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
-        	
-			<!-- products header -->
-			<nav id="store" class="w-full z-30 top-0 px-6 py-1">
-            	<div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
-            		<a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="#">
-                	Products
-    				</a>
-            	</div>
-          	</nav>
 
 			<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - NGC Plus.jpg">
+                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - NGC Plus.png">
                 <div class="pt-3 flex items-center justify-between">
-					<p class="text-xl">NGC+</p>
+					<p class="text-xl" style="font-family: DisplayFont;">NGC+</p>
                 </div>
                 <a href="assets/product_info/NGC PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
 				<a href="assets/installer_notes/NANO GRAPHENE COATING (NGC)+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
 			<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - AYP.jpg">
+                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - AYP.png">
                 <div class="pt-3 flex items-center justify-between">
-					<p class="text-xl">AYICON PRO</p>
+					<p class="text-xl" style="font-family: DisplayFont;">AYICON PRO</p>
                 </div>
                 <a href="assets/product_info/AYICON PRO.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
 				<a href="assets/installer_notes/AYICON PRO.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
 			<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - Hybrid Plus.jpg">
+                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - Hybrid Plus.png">
                 <div class="pt-3 flex items-center justify-between">
-					<p class="text-xl">Hybrid+</p>
+					<p class="text-xl" style="font-family: DisplayFont;">HYBRID+</p>
                 </div>
                 <a href="assets/product_info/HYBRID PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
 				<a href="assets/installer_notes/HYBRID+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
           	<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - AYICON V4.jpg">
+                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - AYICON V4.png">
                 <div class="pt-3 flex items-center justify-between">
-					<p class="text-xl">ADS - AYICON V4</p>
+					<p class="text-xl" style="font-family: DisplayFont;">AYICON V4</p>
                 </div>
                 <a href="assets/product_info/AYICON V4.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
 				<a href="assets/installer_notes/AYICON V4.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
 			<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - BX Plus.jpg">
+                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - BX Plus.png">
                 <div class="pt-3 flex items-center justify-between">
-					<p class="text-xl">BX+</p>
+					<p class="text-xl" style="font-family: DisplayFont;">BX+</p>
                 </div>
                 <a href="assets/product_info/BX PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
 				<a href="assets/installer_notes/BEADING EXPRESS (BX)+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
 			<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - Window Plus.jpg">
+                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - Window Plus.png">
                 <div class="pt-3 flex items-center justify-between">
-					<p class="text-xl">Window+</p>
+					<p class="text-xl" style="font-family: DisplayFont;">WINDOW+</p>
                 </div>
                 <a href="assets/product_info/WINDOW PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
 				<a href="assets/installer_notes/WINDOW+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
 			<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - Wheel Plus.jpg">
+                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - Wheel Plus.png">
                 <div class="pt-3 flex items-center justify-between">
-					<p class="text-xl">Wheel+</p>
+					<p class="text-xl" style="font-family: DisplayFont;">WHEEL+</p>
                 </div>
                 <a href="assets/product_info/WHEEL PLUS.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
 				<a href="assets/installer_notes/WHEEL+.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>
           	</div>
 
 			<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - Interior V3.jpg">
+                <img class="hover:grow hover:shadow-lg" src="assets/product_photos/ADS - Interior V3.png">
                 <div class="pt-3 flex items-center justify-between">
-					<p class="text-xl">Interior V3</p>
+					<p class="text-xl" style="font-family: DisplayFont;">INTERIOR V3</p>
                 </div>
                 <a href="assets/product_info/INTERIOR V3.pdf"> <p class="pt-1 text-gray-900 underline">Product Information</p> </a>
 				<a href="assets/installer_notes/INTERIOR COATING V3.pdf"> <p class="pt-1 text-gray-900 underline">Installer Notes</p> </a>

@@ -12,11 +12,17 @@ A repo hosting the Github Pages files for the Artdeshine India website. Built us
 - Change from domain redirect to proper hosting.
 - Optimize all media content.
 - Fix navbar content.
-- (DONE) Replace sitewide fonts with custom font.
-- (DONE) Fix product data sheet files.
-- (DONE) Fix Graphene Seal's pdfs (missing).
-- (DONE) Add a google maps section to the bottom.
-- (DONE) Add carousel.
+
+Notes for Website
+
+1. Header slides loading slow and 3rd slider taking long time to load
+
+3. Product information loading asks to login Adobe acrobat reader. The PDF open as a pop up window. Not in the same Window.
+This applies same for installer notes
+
+4. Please change Driveclean to Sparkle Car Care which is the distribution company. All other details are same.
+
+6. Please add contact us with mail id baranjil@gmail.com
 
 ## Acknowledgements
 
